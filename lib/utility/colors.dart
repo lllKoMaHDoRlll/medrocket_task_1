@@ -10,4 +10,7 @@ class AppColors {
   static const accent = Color.fromARGB(255, 26, 93, 208);
   static const warn = Color.fromARGB(255, 249, 210, 174);
   static const warnLight = Color.fromARGB(255, 255, 242, 217);
+
+  static const background = Color.fromARGB(255, 255, 255, 255);
+  static const backgroundSecondary = Color.fromARGB(255,236,241,251);
 }
