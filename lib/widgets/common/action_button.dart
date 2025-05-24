@@ -18,17 +18,17 @@ class ActionButton extends StatelessWidget {
     return GestureDetector(
       onTap: callback,
       child: Container(
-        height: 50,
+        height: 55,
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: _getBackgroundColor(),
-          borderRadius: BorderRadius.all(Radius.circular(12)),
+          borderRadius: BorderRadius.all(Radius.circular(16)),
         ),
         child: Text(
           style: TextStyle(
             color: _getTextColor(),
             fontSize: 20,
-            fontWeight: FontWeight.w500,
+            fontWeight: FontWeight.w600,
           ),
           text,
         ),
