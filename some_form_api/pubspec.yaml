@@ -2,6 +2,7 @@ name: some_form_api
 description: "A Dart API Client for the SomeForm API"
 version: 0.0.1
 homepage:
+publish_to: none
 
 environment:
   sdk: ^3.8.0
