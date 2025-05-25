@@ -1,0 +1,31 @@
+name: some_form_repository
+description: "A Dart Repository which manages the some form domain"
+version: 0.0.1
+homepage:
+publish_to: none
+
+environment:
+  sdk: ^3.8.0
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  equatable: ^2.0.7
+  json_annotation: ^4.9.0
+  some_form_api:
+    path: ../some_form_api
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.15
+  coverage: ^1.13.1
+  json_serializable: ^6.9.5
+  mocktail: ^1.0.4
+  test: ^1.25.15
+
+
+flutter:
