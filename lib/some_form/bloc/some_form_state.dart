@@ -1,4 +1,4 @@
-part of 'some_form_cubit.dart';
+part of 'some_form_bloc.dart';
 
 enum SomeFormStatus {
   initial,

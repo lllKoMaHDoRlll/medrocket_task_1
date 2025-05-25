@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:medrocket_home_task_1/some_form/cubit/some_form_cubit.dart';
+import 'package:medrocket_home_task_1/some_form/bloc/some_form_bloc.dart';
 
 class SomeFormPage extends StatelessWidget {
   const SomeFormPage({super.key});
@@ -13,7 +13,7 @@ class SomeFormPage extends StatelessWidget {
       ),
       body: SafeArea(
         child: Center(
-          child: BlocBuilder<SomeFormCubit, SomeFormState>(
+          child: BlocBuilder<SomeFormBloc, SomeFormState>(
             builder: (context, state) {
               return switch (state.status) {
                 SomeFormStatus.initial => Text("Try to fetch data with FAB."),
@@ -31,7 +31,7 @@ class SomeFormPage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           if (!context.mounted) return;
-          await context.read<SomeFormCubit>().fetchSomeForm();
+          context.read<SomeFormBloc>().add(SomeFormFetchButtonPressed());
         },
         child: const Icon(Icons.refresh_rounded),
       ),

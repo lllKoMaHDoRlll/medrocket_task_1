@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'some_form_cubit.dart';
+part of 'some_form_bloc.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
