@@ -32,6 +32,5 @@ class MainAppView extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: const SomeFormPage(),
-    );
   }
 }
