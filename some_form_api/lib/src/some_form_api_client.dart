@@ -17,7 +17,7 @@ class SomeFormApiClient {
 
   final http.Client _httpClient;
 
-  Future<SomeFormData> locationSearch(String query) async {
+  Future<SomeFormData> getSomeFormData() async {
     final someFormDataRequest = Uri.https(
       _baseUrl,
       '/some/endpoint',
